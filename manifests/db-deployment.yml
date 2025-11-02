@@ -7,11 +7,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: db
+      app: swiggy
   template:
     metadata:
       labels:
-        app: db
+        app: swiggy
     spec:
       containers:
         - name: cont-1
@@ -32,7 +32,7 @@ metadata:
 spec:
   clusterIP: None
   selector:
-    app: db
+    app: swiggy
   ports:
     - port: 3306
       targetPort: 3306
